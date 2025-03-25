@@ -1,8 +1,13 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/waUhK5p8)
+
 # Custom Ping Utility
+
+## Overview
+
 This is a Python based implementation of ping that can send ICMP Echo Requests and receive ICMP Echo Responses and display helpful statistics.
 It supports both IPv4 and IPv6 and has a lot of configurable options like ping count, ttl, network interface and timeout.
----
+
+
 
 ## **Features Implemented**
 
@@ -25,7 +30,7 @@ It supports both IPv4 and IPv6 and has a lot of configurable options like ping c
 - Error handling for invalid domain names or unreachable IPs.
 - Provides extensive test cases and logging options.
 
----
+
 
 ## **🚀 Getting Started**
 
@@ -46,7 +51,7 @@ You can also use Make to run the utility and set options
 ```bash
 COUNT=5 TARGET=amazon.com make run
 ```
----
+
 
 ## **Usage**
 ```bash
@@ -67,7 +72,7 @@ options:
   --timeout TIMEOUT     Timeout in seconds for each packet (default: 1)
   -6, --ipv6            Use IPv6 instead of IPv4 (defualt: false)
 ```
----
+
 
 ## **Examples**
 1. Basic IPv4 Ping
@@ -98,7 +103,7 @@ options:
 ```bash
  sudo python3 src/main.py google.com --timeout 2
 ```
----
+
 
 ## **Run Test Suite**
 To run all tests and validate the utility use either one of:
@@ -112,6 +117,7 @@ To run tests and log the output to a file:
 ```bash
 make test-log
 ```
+
 
 ## **Cleanup**
 ```bash
